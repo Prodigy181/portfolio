@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" font-family="Arial, sans-serif">
+  <rect width="1200" height="860" fill="#ffffff"/>
+  <text x="600" y="40" text-anchor="middle" font-size="26" font-weight="bold" fill="#222">Portfolio Wireframe – Merlyn Garcia</text>
+
+  <!-- Page 1: Home -->
+  <g transform="translate(40,70)">
+    <text x="170" y="0" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">Home (index.html)</text>
+    <rect x="0" y="15" width="340" height="600" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="15" y="30" width="310" height="80" fill="#e8e8e8" stroke="#555"/>
+    <text x="170" y="58" text-anchor="middle" font-size="14">HEADER: h1 Name + tagline</text>
+    <rect x="30" y="72" width="280" height="26" fill="#cfcfcf" stroke="#555"/>
+    <text x="170" y="90" text-anchor="middle" font-size="13">NAV: Home | Projects | About &amp; Contact</text>
+    <rect x="15" y="125" width="310" height="230" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+    <text x="170" y="148" text-anchor="middle" font-size="14">SECTION: h2 Welcome + intro text</text>
+    <rect x="70" y="165" width="200" height="150" fill="#f2f2f2" stroke="#555"/>
+    <line x1="70" y1="165" x2="270" y2="315" stroke="#999"/><line x1="270" y1="165" x2="70" y2="315" stroke="#999"/>
+    <text x="170" y="340" text-anchor="middle" font-size="13">FIGURE: image + caption</text>
+    <rect x="15" y="370" width="310" height="160" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+    <text x="170" y="393" text-anchor="middle" font-size="14">SECTION: h2 What I’m Working On</text>
+    <rect x="30" y="410" width="135" height="105" fill="#f2f2f2" stroke="#555"/>
+    <text x="97" y="465" text-anchor="middle" font-size="13">h3 Web Dev</text>
+    <rect x="175" y="410" width="135" height="105" fill="#f2f2f2" stroke="#555"/>
+    <text x="242" y="465" text-anchor="middle" font-size="13">h3 Cybersecurity</text>
+    <rect x="15" y="545" width="310" height="55" fill="#e8e8e8" stroke="#555"/>
+    <text x="170" y="577" text-anchor="middle" font-size="14">FOOTER: © 2026</text>
+  </g>
+
+  <!-- Page 2: Projects -->
+  <g transform="translate(430,70)">
+    <text x="170" y="0" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">Projects (projects.html)</text>
+    <rect x="0" y="15" width="340" height="600" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="15" y="30" width="310" height="80" fill="#e8e8e8" stroke="#555"/>
+    <text x="170" y="58" text-anchor="middle" font-size="14">HEADER: h1 My Projects</text>
+    <rect x="30" y="72" width="280" height="26" fill="#cfcfcf" stroke="#555"/>
+    <text x="170" y="90" text-anchor="middle" font-size="13">NAV: Home | Projects | About &amp; Contact</text>
+    <rect x="15" y="125" width="310" height="320" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+    <text x="170" y="148" text-anchor="middle" font-size="14">SECTION: h2 Web Development Projects</text>
+    <rect x="30" y="165" width="280" height="80" fill="#f2f2f2" stroke="#555"/>
+    <text x="170" y="210" text-anchor="middle" font-size="13">ARTICLE: h3 My First Web Page</text>
+    <rect x="30" y="255" width="280" height="80" fill="#f2f2f2" stroke="#555"/>
+    <text x="170" y="300" text-anchor="middle" font-size="13">ARTICLE: h3 Cybersecurity Page</text>
+    <rect x="30" y="345" width="280" height="80" fill="#f2f2f2" stroke="#555"/>
+    <text x="170" y="390" text-anchor="middle" font-size="13">ARTICLE: h3 Personal Portfolio</text>
+    <rect x="15" y="460" width="310" height="70" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+    <text x="170" y="500" text-anchor="middle" font-size="14">SECTION: h2 Coming Soon</text>
+    <rect x="15" y="545" width="310" height="55" fill="#e8e8e8" stroke="#555"/>
+    <text x="170" y="577" text-anchor="middle" font-size="14">FOOTER: © 2026</text>
+  </g>
+
+  <!-- Page 3: About & Contact -->
+  <g transform="translate(820,70)">
+    <text x="170" y="0" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">About &amp; Contact (about.html)</text>
+    <rect x="0" y="15" width="340" height="600" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="15" y="30" width="310" height="80" fill="#e8e8e8" stroke="#555"/>
+    <text x="170" y="58" text-anchor="middle" font-size="14">HEADER: h1 About Me</text>
+    <rect x="30" y="72" width="280" height="26" fill="#cfcfcf" stroke="#555"/>
+    <text x="170" y="90" text-anchor="middle" font-size="13">NAV: Home | Projects | About &amp; Contact</text>
+    <rect x="15" y="125" width="310" height="80" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+    <text x="170" y="170" text-anchor="middle" font-size="14">SECTION: h2 Who I Am</text>
+    <rect x="15" y="220" width="310" height="220" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+    <text x="170" y="243" text-anchor="middle" font-size="14">SECTION: h2 Why Cybersecurity</text>
+    <rect x="30" y="260" width="280" height="80" fill="#f2f2f2" stroke="#555"/>
+    <text x="170" y="305" text-anchor="middle" font-size="13">ARTICLE: h3 Common Threats</text>
+    <rect x="30" y="350" width="280" height="80" fill="#f2f2f2" stroke="#555"/>
+    <text x="170" y="395" text-anchor="middle" font-size="13">ARTICLE: h3 My Goals</text>
+    <rect x="15" y="455" width="310" height="75" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+    <text x="170" y="497" text-anchor="middle" font-size="14">SECTION: h2 Contact Me</text>
+    <rect x="15" y="545" width="310" height="55" fill="#e8e8e8" stroke="#555"/>
+    <text x="170" y="577" text-anchor="middle" font-size="14">FOOTER: © 2026</text>
+  </g>
+
+  <!-- Color palette & fonts -->
+  <g transform="translate(40,710)">
+    <text x="0" y="0" font-size="18" font-weight="bold" fill="#222">Color palette:</text>
+    <rect x="0" y="15" width="40" height="40" fill="#0b1f3a" stroke="#333"/><text x="48" y="40" font-size="14">#0B1F3A navy (background)</text>
+    <rect x="260" y="15" width="40" height="40" fill="#00c853" stroke="#333"/><text x="308" y="40" font-size="14">#00C853 green (links/accents)</text>
+    <rect x="540" y="15" width="40" height="40" fill="#e53935" stroke="#333"/><text x="588" y="40" font-size="14">#E53935 red (highlights)</text>
+    <rect x="790" y="15" width="40" height="40" fill="#f5f5f5" stroke="#333"/><text x="838" y="40" font-size="14">#F5F5F5 light gray (text)</text>
+    <text x="0" y="95" font-size="18" font-weight="bold" fill="#222">Fonts:</text>
+    <text x="70" y="95" font-size="16">Headings: Roboto Mono (techy/code look) · Body text: Roboto (clean and easy to read)</text>
+  </g>
+</svg>
