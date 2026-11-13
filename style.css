@@ -1,19 +1,19 @@
 /* ==========================================================
-   Milestone 2: Styled & Responsive
-   Color palette (from my wireframe):
+   Merlyn Garcia — Personal Portfolio
+   Milestone 3: Accessible & Designed
+   ----------------------------------------------------------
+   Color palette
      Navy:       #0b1f3a  (page background)
-     Dark navy:  #12294a  (cards / sections)
-     Green:      #00c853  (links, accents)
-     Red:        #e53935  (highlights, borders)
-     Light gray: #f5f5f5  (text)
-   Fonts (Google Fonts):
-     Headings: Roboto Mono   Body: Roboto
-   Spacing system: multiples of 8px (8, 16, 24, 32, 48)
-   Mobile-first: base styles are for phones (320px+),
-   then @media queries add tablet (768px) and desktop (1200px)
+     Dark navy:  #12294a  (card / section backgrounds)
+     Green:      #00c853  (links, accents, borders)
+     Red:        #e53935  (highlight borders, errors)
+     Light gray: #f5f5f5  (body text)
+   Fonts: Roboto Mono (headings) · Roboto (body)
+   Spacing: multiples of 8 px
+   Mobile-first: 320 px base → 768 px tablet → 1200 px desktop
    ========================================================== */
-/* ---------- Skip navigation link (accessibility) ---------- */
 
+/* ---------- Skip navigation link ---------- */
 .skip-link {
   position: absolute;
   left: 50%;
@@ -28,22 +28,16 @@
   transition: transform 0.2s;
   text-decoration: none;
 }
-
 .skip-link:focus {
   transform: translate(-50%, 0);
 }
 
-
-
-
-/* ---------- Type selectors ---------- */
-
-
+/* ---------- Reset ---------- */
 * {
   box-sizing: border-box;
 }
 
-
+/* ---------- Base ---------- */
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -53,58 +47,28 @@ body {
   background-color: #0b1f3a;
 }
 
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Roboto Mono", "Courier New", monospace;
   line-height: 1.3;
   margin: 0 0 16px;
 }
+h1 { font-size: 1.75rem; color: #00c853; }
+h2 { font-size: 1.375rem; padding-bottom: 8px; border-bottom: 2px solid #e53935; }
+h3 { font-size: 1.125rem; color: #00c853; }
 
+p { margin: 0 0 16px; }
 
-h1 {
-  font-size: 1.75rem;
-  color: #00c853;
-}
+a { color: #00c853; }
+a:hover, a:focus { color: #f5f5f5; }
 
-
-h2 {
-  font-size: 1.375rem;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #e53935;
-}
-
-
-h3 {
-  font-size: 1.125rem;
-  color: #00c853;
-}
-
-
-p {
-  margin: 0 0 16px;
-}
-
-
-a {
-  color: #00c853;
-}
-
-
-a:hover,
-a:focus {
-  color: #f5f5f5;
-}
-
-
+/* ---------- Header ---------- */
 header {
   padding: 32px 16px 24px;
   text-align: center;
   border-bottom: 4px solid #00c853;
 }
 
-
+/* ---------- Nav ---------- */
 nav ul {
   display: flex;
   flex-direction: column;
@@ -112,3 +76,224 @@ nav ul {
   margin: 24px 0 0;
   padding: 0;
   list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+nav a:hover,
+nav a:focus {
+  background: #00c853;
+  color: #0b1f3a;
+  outline: none;
+}
+nav a[aria-current="page"] {
+  color: #00c853;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ---------- Main content ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+/* ---------- Card grid ----------
+   Gestalt — Proximity: cards are grouped with consistent
+   internal spacing so each reads as one content unit.
+   Gestalt — Similarity: all cards share the same background,
+   border radius, padding, and left accent, signaling they
+   are the same content type.
+   ----------------------------------------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  background-color: #12294a;
+  border-radius: 8px;
+  padding: 24px;
+  border-left: 4px solid #e53935;
+}
+
+/* ---------- Intro layout ---------- */
+.intro-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.intro-layout figure {
+  margin: 0;
+}
+.intro-layout img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #00c853;
+}
+figcaption {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/* ---------- Tagline ---------- */
+.tagline {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin: 4px 0 0;
+}
+
+/* ---------- Placeholder text ---------- */
+.placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 24px 16px;
+  border-top: 2px solid #00c853;
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+/* ---------- Screen reader only utility ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =========================================
+   Contact form
+   ========================================= */
+#contact-form {
+  margin-top: 24px;
+}
+#contact-form fieldset {
+  border: 2px solid #00c853;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 0;
+}
+#contact-form legend {
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00c853;
+  padding: 0 8px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: 700;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+}
+.form-group input,
+.form-group textarea {
+  background: #12294a;
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1rem;
+  width: 100%;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 3px solid #00c853;
+  outline-offset: 2px;
+  border-color: #00c853;
+}
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"] {
+  border-color: #e53935;
+}
+.error-msg {
+  color: #e53935;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.error-msg[hidden] {
+  display: none;
+}
+#contact-form button[type="submit"] {
+  background: #00c853;
+  color: #0b1f3a;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+#contact-form button[type="submit"]:hover,
+#contact-form button[type="submit"]:focus {
+  background: #f5f5f5;
+  outline: 3px solid #00c853;
+  outline-offset: 2px;
+}
+
+/* =========================================
+   Responsive — tablet 768 px+
+   ========================================= */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-grid.three-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .intro-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .intro-layout img {
+    max-width: 300px;
+  }
+}
+
+/* =========================================
+   Responsive — desktop 1200 px+
+   ========================================= */
+@media (min-width: 1200px) {
+  .card-grid.three-up {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
