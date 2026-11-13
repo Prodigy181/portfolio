@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Merlyn Garcia and how to get in touch.">
+  <meta name="description" content="About Merlyn Garcia — IT student, future cybersecurity professional. Contact form included.">
   <title>About &amp; Contact | Merlyn Garcia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,60 +11,118 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+  <h1>Merlyn Garcia</h1>
+  <p class="tagline">IT Student &middot; Future Cybersecurity Professional</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html" aria-current="page">About &amp; Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About &amp; Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<main id="main-content">
 
-  <main>
+  <section id="about">
+    <h2>Who I Am</h2>
+    <p>Hi, I'm Merlyn Garcia, an IT student at the University of Illinois Chicago. I'm passionate about understanding how technology works under the hood — from web development to network security. Outside of school I work in warehousing while building the skills I need to transition into a cybersecurity career.</p>
+    <p>I'm a hands-on learner. I learn best by tinkering: breaking things, figuring out why they broke, and putting them back together better than before.</p>
+  </section>
 
-    <section id="about">
-      <h2>Who I Am</h2>
-      <p>I’m currently studying IT, and I’ve always been curious about hacking and jailbreaking. I’ve wanted to learn how people find ways around restrictions on devices and systems, how hacking actually works, and how to use that knowledge to understand cybersecurity and protect technology.</p>
-    </section>
-
-    <section id="cybersecurity">
-      <h2>Why Cybersecurity</h2>
-      <p>I believe cybersecurity professionals monitor system components and networks to make sure everything is working safely and to look for suspicious activity. They also help protect computers, networks, and sensitive information from hackers, viruses, and other security threats.</p>
-
-      <div class="card-grid">
+  <section id="cybersecurity">
+    <h2>Why Cybersecurity</h2>
+    <div class="card-grid">
       <article class="card">
         <h3>Common Threats</h3>
-        <ul>
-          <li>Phishing emails</li>
-          <li>Malware and viruses</li>
-          <li>Hacking and unauthorized access</li>
-        </ul>
+        <p>Phishing, ransomware, and social engineering are some of the most damaging attacks today — and many of them succeed not because of technical failures, but because people aren't trained to spot them. That gap fascinates me.</p>
       </article>
-
       <article class="card">
         <h3>My Goals</h3>
-        <ol>
-          <li>Finish my web development class and keep building my IT skills.</li>
-          <li>Earn a beginner cybersecurity certification, like CompTIA Security+.</li>
-          <li>Practice hacking legally on training sites like TryHackMe and get an internship in cybersecurity.</li>
-        </ol>
+        <p>I want to work in security operations or penetration testing. I'm currently studying for the CompTIA Security+ and working on home-lab projects to build practical skills alongside my coursework.</p>
       </article>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p class="placeholder">[Placeholder: contact form or email link will go here.]</p>
-    </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a question or want to connect? Fill out the form below.</p>
 
-  </main>
+    <form id="contact-form" novalidate>
+      <fieldset>
+        <legend>Send me a message</legend>
 
-  <footer>
-    <p>&copy; 2026 Merlyn Garcia &middot; Web Development</p>
-  </footer>
+        <div class="form-group">
+          <label for="name">
+            Name
+            <span aria-hidden="true">*</span>
+            <span class="sr-only">(required)</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            aria-required="true"
+            aria-describedby="name-error"
+          >
+          <span id="name-error" class="error-msg" role="alert" hidden>
+            Please enter your name.
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">
+            Email
+            <span aria-hidden="true">*</span>
+            <span class="sr-only">(required)</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            aria-required="true"
+            aria-describedby="email-error"
+          >
+          <span id="email-error" class="error-msg" role="alert" hidden>
+            Please enter a valid email address.
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">
+            Message
+            <span aria-hidden="true">*</span>
+            <span class="sr-only">(required)</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            aria-required="true"
+            aria-describedby="message-error"
+          ></textarea>
+          <span id="message-error" class="error-msg" role="alert" hidden>
+            Please write a message.
+          </span>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </fieldset>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Merlyn Garcia &middot; Web Development</p>
+</footer>
 
 </body>
 </html>
